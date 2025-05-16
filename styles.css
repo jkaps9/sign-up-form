@@ -23,10 +23,11 @@ body {
     font-family: 'latoregular', Arial, Helvetica, sans-serif;
 
     --accent-color: #398ab8;
+    --form-margin: 50px;
 }
 
 main {
-    background-color: #EEE;
+    background-color: #fafafa;
     width: 80%;
     display: flex;
 }
@@ -78,37 +79,26 @@ main {
     }
 }
 
-button,
-label,
-input {
-    display: block;
-    font-family: inherit;
-    font-size: 100%;
-    margin: 0;
-    box-sizing: border-box;
-    width: 100%;
-
-}
-
-form {
-    margin-top: 50px;
-}
-
 .form-sidebar {
     flex: 1;
     margin-top: 160px;
 }
 
 .form-sidebar>p {
-    margin-left: 40px;
+    margin-left: var(--form-margin);
     max-width: 48ch;
     font-size: 18px;
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
 }
 
 form h2,
 form button,
 form p {
-    margin: 10px 40px;
+    margin: 10px var(--form-margin);
 }
 
 .form-row {
@@ -120,17 +110,58 @@ form p {
 .input-item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 15px 10px 40px;
+    margin: 10px 15px 10px var(--form-margin);
+}
+
+button,
+label,
+input {
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+form {
+    margin-top: 50px;
 }
 
 .input-item label {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'] {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    height: 28px;
+    min-width: 225px;
+    outline: none;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:hover {
+    border: 1px solid #babcc0;
+}
+
+input:focus {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid blue;
 }
 
 .card {
-    padding: 10px 0 50px;
+    padding: 10px 0 20px;
     background-color: #FFFFFF;
 }
 
@@ -140,4 +171,11 @@ form button {
     border: none;
     border-radius: 4px;
     padding: 10px 50px;
+    margin-top: 30px;
+}
+
+#login-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
 }
