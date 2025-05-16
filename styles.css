@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'latoregular';
+    src: url('./fonts/lato-regular-webfont.woff2') format('woff2'),
+        url('./fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,20 +14,17 @@
 
 body {
     background-color: #EEEEEE;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-header {
+main {
     text-align: center;
     background-color: #FFFFFF;
     width: 80%;
     margin: 20px 0;
     padding: 40px;
-}
-
-header h1 {
-    font-size: 36px;
-    margin-bottom: 16px;
 }
