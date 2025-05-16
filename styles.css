@@ -26,7 +26,6 @@ body {
 }
 
 main {
-    text-align: center;
     background-color: #FFFFFF;
     width: 80%;
     display: flex;
@@ -74,4 +73,53 @@ main {
     a {
         color: white;
     }
+}
+
+button,
+label,
+input {
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+form {
+    margin-top: 50px;
+}
+
+.form-sidebar {
+    margin-top: 160px;
+}
+
+.form-sidebar>p {
+    margin-left: 25px;
+}
+
+form h2,
+form button,
+form p {
+    margin: 10px 40px 10px 25px;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: fit-content;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 40px 10px 25px;
+}
+
+.input-item label {
+    text-transform: uppercase;
+    font-size: 14px;
 }
