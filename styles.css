@@ -158,6 +158,7 @@ input:focus {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid blue;
+    box-shadow: 1px 1px 3px grey;
 }
 
 .card {
